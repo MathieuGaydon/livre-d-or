@@ -1,0 +1,556 @@
+/* body{
+    background-color: rgb(255, 255, 255);
+}
+h2{
+    color: white;
+}
+header{
+    background-color: #f6c902;
+    height: 5em;
+    display: flex;
+} */
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Fond sombre */
+    color: #fff; /* Texte blanc pour contraste */
+}
+
+/* Header */
+header {
+    background-color: #d1b200; /* Jaune pour l'en-tête */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+p{
+    color: white;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Affiche les liens en ligne */
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #111; /* Texte noir pour contraster avec le jaune */
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fff; /* Blanc au survol */
+}
+
+/* Main Content */
+.main-index {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 900px;
+    margin: 2em auto;
+    background-color: rgb(255, 255, 255);
+}
+
+main h1 {
+    color: #d1b200; /* Jaune pour le titre */
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 20px;
+    color: #000000; /* Gris clair pour le texte */
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #d1b200;
+    border: 2px solid #d1b200;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+li{
+    list-style: none;
+}
+a:hover {
+    background-color: #d1b200;
+    color: #111;
+    border-color: #111;
+}
+h2{
+    color: #d1b200;
+}
+section{
+    color: black;
+}
+
+/* Footer */
+footer {
+    background-color: #d1b200; /* Jaune pour le footer */
+    color: #111; /* Texte noir pour contraster avec le jaune */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.main-profil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.form-connection {
+    background-color: #2c2f33; /* Fond sombre pour le formulaire */
+    border-radius: 8px;
+    padding: 30px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.h2-profil {
+    color: #FFD700; /* Jaune pour le titre */
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Message d'information */
+.message {
+    background-color: #28a745; /* Vert pour un message réussi */
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Formulaire */
+.form-profil {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Labels */
+.label-profil {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Champs de saisie */
+.input-profil {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+}
+
+.input-profil:focus {
+    outline: none;
+    border-color: #FFD700; /* Jaune lors du focus */
+}
+
+/* Bouton */
+.bouton-profil {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #FFD700; /* Jaune pour le bouton */
+    color: #111;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bouton-profil:hover {
+    background-color: #e6c100; /* Jaune plus foncé au survol */
+}
+
+/* Formulaire de connexion */
+.form-connection {
+    background-color: #2c2f33; /* Fond sombre pour le formulaire */
+    border-radius: 8px;
+    padding: 30px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1em auto;
+}
+
+.h2-profil {
+    color: #FFD700; /* Jaune pour le titre */
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Labels pour les champs */
+.label-login {
+    font-size: 16px;
+    color: #ccc;
+    text-align: left;
+}
+
+/* Champs de saisie */
+.input-login {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+}
+
+.input-login:focus {
+    outline: none;
+    border-color: #FFD700; /* Jaune lors du focus */
+}
+
+/* Bouton de connexion */
+.bouton-login {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #FFD700; /* Jaune pour le bouton */
+    color: #111;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.bouton-login:hover {
+    background-color: #e6c100; /* Jaune plus foncé au survol */
+}
+
+/* Message d'erreur */
+.error-message {
+    background-color: #e74c3c; /* Rouge pour l'erreur */
+    color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Lien pour la création d'un compte */
+.form-connection p a {
+    font-size: 16px;
+    color: #FFD700;
+    text-decoration: none;
+    border: 2px solid #FFD700;
+    padding: 8px 20px;
+    border-radius: 25px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.form-connection p a:hover {
+    background-color: #FFD700;
+    color: #111;
+    border-color: #111;
+}
+.mdp-log{
+    margin-top: -1em;
+}
+/* Style pour les commentaires */
+.comments {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes de largeur égale */
+    gap: 20px; /* Espacement entre les commentaires */
+    margin-top: 30px;
+}
+
+/* Style pour chaque commentaire */
+.comment {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word; /* Assure que le texte ne dépasse pas */
+}
+
+.comment p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.comment p:first-child {
+    font-weight: bold;
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.pagination-wrapper {
+    text-align: center; /* Centre la pagination */
+    margin-bottom: 0.5em; /* Crée de l'espace en dessous de la pagination */
+    margin-top: 2em;
+}
+
+.pagination {
+    display: inline-flex; /* Centre les éléments à l'intérieur de la pagination */
+    justify-content: center;
+}
+
+.ajouter-commentaire {
+    text-align: right; /* Aligne le bouton à droite */
+    margin-top: 0.5em; /* Espace entre la pagination et le bouton */
+}
+
+.ajouter-commentaire a {
+    text-decoration: none;
+    background-color: #c2bf00; /* Couleur de fond du bouton */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+
+.recherche {
+    display: flex;
+    justify-content: center; /* Centrer le formulaire horizontalement */
+    margin-top: 20px; /* Espace au-dessus du formulaire */
+}
+
+.form-recherche {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #ccc; /* Bordure légère autour du formulaire */
+    padding: 0; /* Pas de padding autour du formulaire */
+    border-radius: 20px; /* Bordures arrondies */
+    background-color: #f9f9f9; /* Fond clair pour le formulaire */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Légère ombre autour du formulaire */
+    width: 100%; /* Assurer que le formulaire prend toute la largeur disponible */
+    max-width: 597px; /* Limiter la largeur à un maximum de 700px */
+}
+
+.input-recherche {
+    border: none; /* Pas de bordure sur le champ de texte */
+    padding: 15px 100px; /* Plus d'espace à l'intérieur du champ */
+    border-radius: 20px; /* Bordures arrondies */
+    font-size: 18px; /* Augmenter la taille de la police */
+    outline: none; /* Retirer la bordure par défaut au focus */
+}
+
+.input-recherche:focus {
+    border: 2px solid #007bff; /* Bordure bleue quand le champ est sélectionné */
+}
+
+.recherche-bouton {
+    background-color: #007bff; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte */
+    border: none; /* Retirer la bordure du bouton */
+    padding: 15px 30px; /* Plus de padding pour le bouton */
+    border-radius: 20px; /* Bordures arrondies */
+    cursor: pointer; /* Curseur pointer pour indiquer un bouton cliquable */
+    font-size: 18px; /* Augmenter la taille de la police du bouton */
+    transition: background-color 0.3s; /* Transition douce pour la couleur de fond */
+    margin-left: 10px; /* Espace entre le champ de recherche et le bouton */
+}
+
+.recherche-bouton:hover {
+    background-color: #0056b3; /* Couleur du bouton au survol */
+}
+
+
+
+/* Style de base pour la section commentaire */
+.commentaire {
+    width: 100%;
+    max-width: 600px;
+    margin: 5em auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style du titre */
+.h1-com {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style du formulaire */
+.form-com {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Style de la zone de texte */
+.text-com {
+    width: 95%;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Changer la couleur de la bordure de la zone de texte au focus */
+.text-com:focus {
+    border-color: #d7d300;
+    outline: none;
+}
+
+/* Style du bouton */
+.bouton-com {
+    align-self: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #d7d300;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Changer la couleur du bouton au survol */
+.bouton-com:hover {
+    background-color: #757500;
+}
+
+/* Style du bouton quand il est désactivé */
+.bouton-com:disabled {
+    background-color: #999999;
+    cursor: not-allowed;
+}
+
+
+
+
+
+/* Style de base pour le menu */
+.menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+/* Cacher le menu et le hamburger sur petits écrans */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+}
+
+.hamburger .bar {
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+}
+
+@media screen and (max-width: 768px) {
+    /* Afficher le hamburger sur petits écrans */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Masquer le menu par défaut */
+    .menu {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Afficher le menu lorsque le hamburger est cliqué (checkbox) */
+    input[type="checkbox"]:checked + .menu {
+        display: flex;
+    }
+}
+
+/* Affichage du menu après avoir cliqué sur le hamburger */
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Affichage du menu lorsqu'on clique sur le bouton hamburger */
+input[type="checkbox"]:checked + .hamburger + .menu {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .comments {
+        grid-template-columns: 1fr; /* Une seule colonne pour les petits écrans */
+    }
+}
